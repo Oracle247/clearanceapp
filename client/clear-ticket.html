@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+	<title>HTML</title>
+  
+  <!-- HTML -->
+  
+	
+  <!-- Custom Styles -->
+	<link rel="stylesheet" href="clear-ticket.css">
+    
+</head>
+
+<body>
+  <section class="main">
+    <div class="logo"> 
+      <img src="./pics/logo.3c742b54.png" height="40x" width="110px">           
+    </div>
+    <p class="p">Agent name:</p>
+    <h1>CLEAR TICKET</h1>
+    <div class="box">
+      <div class="head">
+        <h2>Enter Ticket ID</h2>
+        <input type="text">
+      </div>
+      <div class="body">
+        <p>Name:</p>
+        <p>Email:</p>
+        <p>Phone:</p>
+        <p>Ticket Type:</p>
+        <p>No Of Ticket:</p>
+        <p>Account:</p>
+        <p>Event Organizer:</p>
+        <p>Event Name:</p>
+        <p>Status:</p>
+      </div>
+      <div class="foot">
+        <button>Clean Now</button>
+      </div>
+    </div>
+  </section>
+  <nav class="navBar" id="footer">
+    <a href="/clear-ticket" class="ticket" id="ticket" onclick="click()">
+      <div class="icon">
+        <img src="./pics/clear ticket icon.png" height="15px" width="15px">
+      </div>
+      CLEAR TICKET
+    </a>
+    <a href="/bulk-ticket" class="ticket" id="ticket"  onclick="click()">
+      <div class="icon">
+        <img src="./pics/bulk ticket icon.png" height="15px" width="15px">
+      </div>
+      BULK TICKET
+    </a>
+    <a href="/ticket-history" class="ticket" id="ticket" onclick="click()">
+      <div class="icon">
+        <img src="./pics/CHECK ICON.png" height="15px" width="15px">
+      </div>
+      TICKET HISTORY
+    </a>
+  </nav>
+  <script src="script.js"></script>
+</body>
+</html>
