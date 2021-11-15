@@ -89,24 +89,32 @@ body{
 
 .main .box .table table{
   border-collapse: collapse;
+  border-spacing: 0;
   width: 100%;
+  overflow: hidden;
+  border-radius: 12px 12px 0px 0px;
+  box-shadow: 0 2px 12px rgba(32,32,32,.5);
+  background-color: #f5faf5;
+  text-align: center;
 }
 
 .main .box .table th{
   font-size: 14px;
-  border: 1px solid #07360e;
+  background-color: #07360e;
+  color: #f5faf5;
+  /* border: 1px solid #07360e; */
   padding: 5px;
 }
 
 .main .box .table tr{
   
   font-size: 12px;
-  border: 1px solid #07360e;
+  /* border: 1px solid #07360e; */
 }
 
 .main .box .table td{
   font-size: 12px;
-  border: 1px solid #07360e;
+  border: 0.5px solid #07360e;
   height: 200px;
 }
 
