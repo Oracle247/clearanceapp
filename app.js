@@ -16,21 +16,21 @@ app.listen(port, () => {
 })
 
 app.get('/', (req, res) => {
-  res.json({
-    message:"hello"
-  })
-    // res.sendFile('./client/clear-ticket.html', { root: __dirname })
+  // res.json({
+  //   message:"hello"
+  // })
+    res.sendFile('./client/clear-ticket.html', { root: __dirname })
 })
 
-// app.get('/clear-ticket', (req, res) => {
-//   res.sendFile('./client/clear-ticket.html', { root: __dirname })
-// })
+app.get('/clear-ticket', (req, res) => {
+  res.sendFile('./client/clear-ticket.html', { root: __dirname })
+})
 
-// app.get('/bulk-ticket', (req, res) => {
-//     res.sendFile('./client/bulk-ticket.html', { root: __dirname })
-// })
+app.get('/bulk-ticket', (req, res) => {
+    res.sendFile('./client/bulk-ticket.html', { root: __dirname })
+})
 
-// app.get('/ticket-history', (req, res) => {
-//     res.sendFile('./client/ticket-history.html', { root: __dirname })
-// })
+app.get('/ticket-history', (req, res) => {
+    res.sendFile('./client/ticket-history.html', { root: __dirname })
+})
 
