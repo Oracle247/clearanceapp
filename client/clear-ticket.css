@@ -115,6 +115,9 @@ body{
 }
 
 .navBar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
   display: flex;
   background-color: #07360e;
   width: 100%;
