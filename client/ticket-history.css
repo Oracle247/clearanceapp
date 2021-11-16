@@ -45,6 +45,7 @@ body{
 
 .main h1{
   font-family: 'Montserrat', sans-serif;
+  margin: 10px 10px;
   color: #07360e;
 }
 
@@ -55,8 +56,7 @@ body{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 40px;
-  margin-top: 40px;
+  padding: 10px;
   height: fit-content;
   width: 60%;
   gap: 10px;
@@ -83,11 +83,43 @@ body{
   width: 80%;
 }
 
-.main .box .table{
+.dataTables_scrollBody{
+  /* height: fit-content; */
+  max-height: 250px;
+}
+
+/* .main .box .table{
+  border: 1px solid #07360e;
+  padding: 2px;
+  width: 70%;
+  height: 70%;
+  overflow: auto;
+} */
+/* 
+.main .box table{
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}  */
+
+.main .box table thead{
+  background-color: #07360e;
+  color: #f5faf5;
+  font-size: 15px;
   width: 100%;
 }
 
-.main .box .table table{
+.main .box table tbody{
+  color: #07360e;
+  font-size: 15px;
+  width: 100%;
+}
+
+.main .box table tbody tr td{
+  padding: 4px 5px;
+}
+
+/* .main .box .table table{
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
@@ -102,21 +134,22 @@ body{
   font-size: 14px;
   background-color: #07360e;
   color: #f5faf5;
-  /* border: 1px solid #07360e; */
+  border: 0.5px solid #2bc241;
+  border: 1px solid #07360e;
   padding: 5px;
 }
 
 .main .box .table tr{
   
   font-size: 12px;
-  /* border: 1px solid #07360e; */
+  border: 1px solid #07360e;
 }
 
 .main .box .table td{
   font-size: 12px;
-  border: 0.5px solid #07360e;
+  border: 0.5px solid #2bc241;
   height: 200px;
-}
+} */
 
 .main .box .foot{
   width: 100%;
@@ -131,14 +164,18 @@ body{
 }
 
 .navBar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
   display: flex;
   background-color: #07360e;
   width: 100%;
   height: 40px;
   gap: 5px;
+  z-index: 100;
   padding-left: 10px;
   padding-right: 10px;
-  justify-content: space-around;
+  justify-content: sp/*  */ace-around;
 }
 
 .navBar .ticket{
@@ -169,11 +206,12 @@ body{
   text-decoration: none;
   color: #f5faf5;
 }
-@media only screen and (max-width: 746px){
+
+@media only screen and (max-width: 968px){
   .main .box{
     padding: 20px;
     margin-top: 30px;
-    height: 55%;
+    height: fit-content;
     width: 78%;
   }
   .main .box .head h2{
@@ -184,9 +222,73 @@ body{
     height: 15px;
     width: 40%;
   }
-	.main .box .table th{
-    font-size: 8px;
-    border: 1px solid #07360e;
-    padding: 2px;
+  .dataTables_wrapper{
+    width: 450px;
+  }
+	.main .box table{
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    /* overflow: scroll; */
+  }
+  .main .box table thead{
+    font-size: 12px;
+    width: 100%;
+  }
+  
+  .main .box table tbody{
+    font-size: 11px;
+    width: 100%;
+  }
+
+  .main .box table thead tr th{
+    padding: 5px 10px;
+  }
+  
+  .main .box table tbody tr td{
+    padding: 2px 3px;
+  }
+}
+
+@media only screen and (max-width: 746px){
+  .main .box{
+    padding: 20px;
+    margin-top: 30px;
+    height: fit-content;
+    width: 78%;
+  }
+  .main .box .head h2{
+    font-size: 12px;
+  }
+
+  .main .box .head input{
+    height: 15px;
+    width: 40%;
+  }
+  .dataTables_wrapper{
+    width: 270px;
+  }
+	.main .box table{
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    /* overflow: scroll; */
+  }
+  .main .box table thead{
+    font-size: 12px;
+    width: 100%;
+  }
+  
+  .main .box table tbody{
+    font-size: 11px;
+    width: 100%;
+  }
+
+  .main .box table thead tr th{
+    padding: 5px 10px;
+  }
+  
+  .main .box table tbody tr td{
+    padding: 2px 3px;
   }
 }
